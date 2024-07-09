@@ -8,7 +8,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <header className=''>
+    <header>
       <div className="container mx-auto rounded-t-lg pt-5 bg-[#D9D9D9]">
         <section className="flex min-h-20 w-full flex-col px-5 py-2">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
@@ -26,8 +26,8 @@ const Navbar = () => {
                 <Image src={user} alt='user' className='w-[20px] h-[20px] md:w-[30px] md:h-[30px] object-contain' />
               </div>
             </div>
-            <div>
-              <div className="w-[300px] h-[53px] mx-auto md:w-[500px] lg:w-[700px] mt-5 md:mt-0 md:order-1 md:flex-grow md:px-5 bg-black relative">
+            <div className="w-full md:w-auto">
+              <div className="w-full h-[53px] mx-auto md:w-[500px] lg:w-[700px] mt-5 md:mt-0 md:order-1 md:flex-grow md:px-5 bg-black relative">
                 <div className="flex mx-auto items-center gap-2 w-full h-full bg-white border border-black absolute left-[-4px] top-[-6px] px-4">
                   <FaSearch className="" />
                   <input className="w-full h-full outline-none placeholder-black" placeholder="search" />
