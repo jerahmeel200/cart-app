@@ -3,6 +3,19 @@ import React from 'react';
 import Image from 'next/image';
 import image2 from '../../public/assets/images/image2.png';
 import image3 from '../../public/assets/images/image3.png';
+import image4 from '../../public/assets/images/image 1 (4).png';
+import image5 from '../../public/assets/images/image 1 (5).png';
+import image6 from '../../public/assets/images/image 1 (6).png';
+import image7 from '../../public/assets/images/image 1 (7).png';
+import image8 from '../../public/assets/images/image 1 (8).png';
+import image9 from '../../public/assets/images/image 1 (9).png';
+import image10 from '../../public/assets/images/image 1 (10).png';
+import image11 from '../../public/assets/images/image 1 (11).png';
+import image12 from '../../public/assets/images/image 1 (12).png';
+import image13 from '../../public/assets/images/image 1 (13).png';
+import image14 from '../../public/assets/images/image 1 (14).png';
+import image15 from '../../public/assets/images/image 1 (15).png';
+import image16 from '../../public/assets/images/image 1 (16).png';
 
 const articles = [
   {
@@ -11,42 +24,52 @@ const articles = [
     price: '₦2,799,000.00',
   },
   {
-    image: image2,
+    image: image4,
     desc: 'MacBook Pro 16-inch | Apple M3 Max | 1TB',
     price: '₦7,099,000.00',
   },
   {
-    image: image2,
+    image: image5,
     desc: 'AirPods Max',
     price: '₦1,099,000.00',
   },
   {
-    image: image2,
+    image: image15,
     desc: 'New Apple iPhone 15 Pro eSIM',
     price: '₦1,300,000.00',
   },
   {
-    image: image2,
+    image: image7,
     desc: 'New Apple iPhone 14 Plus eSIM',
     price: '₦966,000.00',
   },
   {
-    image: image2,
+    image: image8,
     desc: 'New iPhone 14 Pro 128GB eSIM',
     price: '₦1,120,000.00',
   },
   {
-    image: image2,
+    image: image9,
     desc: 'Preowned Apple iPhone XR Unlocked',
     price: '₦225,000.00',
   },
   {
-    image: image2,
+    image: image10,
     desc: 'Preowned Apple iPhone 11 Pro Unlocked',
     price: '₦445,000.00',
   },
   {
-    image: image2,
+    image: image11,
+    desc: 'Preowned Apple iPhone 12',
+    price: '₦384,000.00',
+  },
+  {
+    image: image12,
+    desc: 'Preowned Apple iPhone 12',
+    price: '₦384,000.00',
+  },
+  {
+    image: image13,
     desc: 'Preowned Apple iPhone 12',
     price: '₦384,000.00',
   },
@@ -65,7 +88,7 @@ const Card = () => {
           <Image 
             src={article.image} 
             alt={article.desc} 
-            className="mx-auto mb-2 w-[87.47px] h-[88.31px] sm:w-[190px] sm:h-[200px] md:w-[227.33px] md:h-[269px]" 
+            className="mx-auto mb-2 w-[87.47px] h-[88.31px] sm:w-[190px] sm:h-[200px] md:w-[227.33px] md:h-[269px] object-contain" 
           />
           <h2 className="text-[7.22px] leading-[11.88px] sm:text-[22px] sm:leading-[36.18px] md:text-[22px] md:leading-[36.18px] font-semibold ">{article.desc}</h2>
           <p className="text-[7.22px] leading-[11.88px] sm:text-[22px] sm:leading-[36.18px] md:text-[22px] md:leading-[36.18px] font-semibold ">{article.price}</p>
