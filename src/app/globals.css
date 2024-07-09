@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+@font-face {
+    font-family: 'newCycle';
+    src: url('../../public/assets/font/NewsCycleRegular.ttf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newCycle ';
+    src: url('../../public/assets/font/NewsCycleRegular.ttf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newCycle';
+    src: url('../../public/assets/font/NewsCycleBold.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newCycle';
+    src: url('../../public/assets/font/NewsCycleBold.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newCycle';
+    src: url('../../public/assets/font/NewsCycleBold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('../../public/assets/font/NewsCycleBold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newsReader';
+    src: url('../../public/assets/font/Newsreader.ttf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'interFont';
+    src: url('../../public/assets/font/inter.ttf') format('opentype');
+  
+    font-style: normal;
+}
+
+@layer base {
+    :root {
+        --font-newCycle: 'newCycle', sans-serif;
+        --font-newsReader: 'newsReader', sans-serif;
+        --font-interFont: 'interFont', sans-serif;
+    }
+} 
+
+html,
+body {
+    font-family: var(--font-eudoxus);
+    /* background-color: ; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-checkbox {
+    @apply appearance-none h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #2563eb; /* Custom blue color */
+    border-color: transparent;
+  }
