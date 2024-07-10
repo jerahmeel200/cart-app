@@ -55,27 +55,27 @@ const articles = [
   },
   {
     image: image10,
-    desc: 'Preowned Apple iPhone 11 Pro Unlocked',
+    desc: 'iPad 10th Gen Case 2022 10.9 Inch',
     price: '₦445,000.00',
   },
   {
     image: image11,
-    desc: 'Preowned Apple iPhone 12',
+    desc: 'Apple iPad Pro 12.9-inch (6th Gen)',
     price: '₦384,000.00',
   },
   {
     image: image12,
-    desc: 'Preowned Apple iPhone 12',
+    desc: 'Apple Watch Series 7 | 45mm',
     price: '₦384,000.00',
   },
   {
     image: image13,
-    desc: 'Preowned Apple iPhone 12',
+    desc: 'Apple Watch Ultra 2 [GPS + Cellular 49mm]',
     price: '₦384,000.00',
   },
   {
     image: image14,
-    desc: 'Preowned Apple iPhone 12',
+    desc: 'Apple Watch Series 9 GPS 45mm',
     price: '₦384,000.00',
   },
 ];
@@ -100,7 +100,7 @@ const Card = () => {
         </div>
         <div className="flex gap-2">
           <button className="bg-[#145771] text-white text-[7.88px] leading-[12.96px] sm:text-[19px] sm:leading-[30px] md:text-[24px] md:leading-[39.47px] w-[62.42px] h-[17.4px] sm:w-[150px] sm:h-[40px] md:w-[162.23px] md:h-[53px] rounded">Buy Now</button>
-          <button className="bg-gray-300 border-[3px] text-[#145771]  border-[#145771]   text-[7.88px] leading-[12.96px] sm:text-[19px] sm:leading-[30px] md:text-[24px] md:leading-[39.47px] w-[62.42px] h-[17.4px] sm:w-[150px] sm:h-[40px] md:w-[162.23px] md:h-[53px] rounded-lg font-[700]  font-newCycle">Add to Cart</button>
+          <button className="bg-gray-300 border-[2px] text-[#145771]  border-[#145771]   text-[7.88px] leading-[12.96px] sm:text-[19px] sm:leading-[30px] md:text-[24px] md:leading-[39.47px] w-[62.42px] h-[17.4px] sm:w-[150px] sm:h-[40px] md:w-[162.23px] md:h-[53px] rounded-md font-[700]  font-newCycle">Add to Cart</button>
         </div>
       </div>
     ))}

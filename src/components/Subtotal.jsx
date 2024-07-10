@@ -4,7 +4,7 @@ import React from 'react'
 const Subtotal = () => {
   return (
     <div className="w-full max-w-[1450px] mx-auto px-2 py-5 pt-5 pb-5 bg-[#D9D9D9]">
-    <div className="bg-white p-6 rounded-lg shadow-md w-[335px] h-[197px] md:w-[500px] md:h-[40px] lg:w-[720px] lg:h-auto">
+    <div className="bg-white p-6 rounded-lg shadow-md  h-[197px] md:w-[500px] md:h-[40px] lg:w-[720px] lg:h-auto">
       <h1 className="text-[13.62px] leading-[16.48px] md:text-[25px] md:leading-[33.86px] lg:text-[32px] lg:leading-[38.86px] font-bold pb-3">
         CART SUMMARY
       </h1>
