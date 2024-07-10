@@ -1,4 +1,6 @@
 import React from 'react';
+import eclipes from '../../public/assets/images/Eclipse.png'
+import Image from 'next/image';
 
 const PaymentDetails = () => {
   return (
@@ -21,11 +23,12 @@ const PaymentDetails = () => {
         </div>
 
         <div className="mb-4">
-          <h2 className="text-lg font-semibold mb-2">PAY NOW</h2>
           <hr className="border-t-2 border-gray-300 -mx-6" />
         </div>
         
         <div className="mb-4">
+        <h2 className="text-lg font-semibold mb-2">PAY NOW</h2>
+
           <div className="flex items-center mb-2">
             <input type="checkbox" id="pay-now" className="mr-2" />
             <label htmlFor="pay-now" className="text-sm">Pay with Cards, Bank transfer, or USSD</label>
@@ -33,20 +36,21 @@ const PaymentDetails = () => {
         </div>
 
         <div className="mb-4">
-          <h2 className="text-lg font-semibold mb-2">Installment</h2>
           <hr className="border-t-2 border-gray-300 -mx-6" />
         </div>
         
         <div className="mb-4">
+          <h2 className="text-lg font-semibold mb-2">Installment</h2>
           <div className="flex items-center mb-2">
+
             <input type="checkbox" id="installment" className="mr-2" />
             <label htmlFor="installment" className="text-sm">Standard Chartered Credit Card @ 3% Interest - Up to 12 months</label>
           </div>
         </div>
 
         <div className="flex justify-between items-center">
-          <img src="path/to/your/image.png" alt="Card Icons" className="h-8" />
-          <button className="bg-[#007BFF] text-white px-4 py-2 rounded-lg">CONFIRM PAYMENT METHOD</button>
+          <Image src={eclipes} alt="Card Icons" className="h-8 object-contain" />
+          <button className="bg-[#145771] text-white px-4 py-2 rounded-lg">CONFIRM PAYMENT METHOD</button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Address = () => {
   return (
     <div className="w-full max-w-[1450px] mx-auto px-2  py-5  md:py-25 bg-[#D9D9D9]">
       <div className="bg-white p-6 rounded-lg mb-5 shadow-md">
-        <div className="flex justify-between items-center  pb-2 mb-4">
+        <div className="flex justify-between items-center  pb-2 mb-2">
           <h2 className="text-lg font-semibold">CUSTOMER ADDRESS</h2>
           <button className="text-blue-600 font-medium">Change</button>
         </div>
@@ -18,7 +18,7 @@ const Address = () => {
       </div>
 
       <div className="bg-white p-6 rounded-lg mb-5 shadow-md">
-        <div className="flex justify-between items-center   pb-4 mb-4">
+        <div className="flex justify-between items-center   pb-4 mb-2">
           <h2 className="text-lg font-semibold">DELIVERY DETAILS</h2>
           <button className="text-blue-600 font-medium">Change</button>
         </div>
