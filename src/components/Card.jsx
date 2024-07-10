@@ -73,6 +73,11 @@ const articles = [
     desc: 'Preowned Apple iPhone 12',
     price: '₦384,000.00',
   },
+  {
+    image: image14,
+    desc: 'Preowned Apple iPhone 12',
+    price: '₦384,000.00',
+  },
 ];
 
 const Card = () => {

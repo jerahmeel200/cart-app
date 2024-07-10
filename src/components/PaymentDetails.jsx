@@ -2,7 +2,7 @@ import React from 'react';
 
 const PaymentDetails = () => {
   return (
-    <div className="container shadow-md mx-auto pt-1 py-5 md:py-25 bg-[#D9D9D9]">
+    <div className="w-full max-w-[1450px] mx-auto px-2 pt-5 shadow-md   pt-1 md:py-25 bg-[#D9D9D9]">
       <div className="bg-white p-6 rounded-lg mb-5">
         <div className="mb-4">
           <h2 className="text-lg font-semibold mb-2">PAYMENT METHOD</h2>

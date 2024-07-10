@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Contact = () => {
   return (
-    <div className="container mx-auto pt-1 py-5 md:py-25 bg-[#D9D9D9]">
+    <div className="w-full max-w-[1450px] mx-auto px-2 py-5pt-1 py-5 md:py-25 bg-[#D9D9D9]">
     <div className="bg-[#438AA5] p-6 shadow-md flex flex-wrap justify-between">
       <div className="flex justify-between w-1/2">
         <div className="w-full">

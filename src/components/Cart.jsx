@@ -17,7 +17,7 @@ const Cart = () => {
   const decrementItem2 = () => setItem2Quantity(item2Quantity > 1 ? item2Quantity - 1 : 1);
 
   return (
-    <div className="container mx-auto pt-1 bg-[#D9D9D9]">
+    <div className="w-full max-w-[1450px] mx-auto px-2 py-5   pt-1 bg-[#D9D9D9]">
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-4">Cart (2)</h2>
 
