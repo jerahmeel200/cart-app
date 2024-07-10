@@ -6,7 +6,7 @@ import React from 'react'
 
 const HomeLanding = () => {
   return (
-    <div className='p-5'>
+    <div className='p-2'>
         <Navbar/>
         <Hero/>
         <Card/>

@@ -77,12 +77,12 @@ const articles = [
 
 const Card = () => {
   return (
-<div className="container mx-auto bg-[#D9D9D9] w-full pb-10 pt-10">
+<div className="  pb-10 pt-10  w-full max-w-[1450px] mx-auto   bg-[#D9D9D9]     ">
   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
     {articles.map((article, index) => (
       <div 
         key={index} 
-        className="bg-white p-4 py-2 rounded-lg shadow-md w-[157px] h-[167px] sm:w-[300px] sm:h-[400px] md:w-[400px] md:h-[490px] mx-auto flex flex-col justify-between"
+        className="bg-white p-4 py-2 rounded-lg shadow-md w-[157px] h-[167px] sm:w-[300px] sm:h-[400px] md:w-[430px] md:h-[490px] mx-auto flex flex-col justify-between"
       >
         <div>
           <Image 

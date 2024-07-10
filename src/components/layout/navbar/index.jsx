@@ -9,7 +9,7 @@ import { FaSearch } from 'react-icons/fa';
 const Navbar = () => {
   return (
     <header>
-      <div className="container mx-auto rounded-t-lg pt-5 bg-[#D9D9D9]">
+      <div className="  rounded-t-lg w-full max-w-[1450px] mx-auto px-2 py-5 md:py-25 bg-[#D9D9D9]">
         <section className="flex min-h-20 w-full flex-col px-5 py-2">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center justify-between w-full md:w-auto">
