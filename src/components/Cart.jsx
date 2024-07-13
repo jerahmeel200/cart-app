@@ -25,7 +25,8 @@ const Cart = () => {
               <img
                 width={100}
                 height={50}
-                src={item.image}
+                src={item.photos[0] ? `https://api.timbu.cloud/images/${item.photos[0].url}` : '/placeholder.jpg'}
+
                 alt={item.title}
                 className="w-[40.33px] h-[36.35px] md:w-[60px] md:h-[40px] lg:w-[158.28px] lg:h-[150px]"
               />
@@ -37,7 +38,7 @@ const Cart = () => {
                   <p className="text-gray-600 text-[9.8px] leading-[8.62px] md:text-[19px] md:leading-[33.86px] lg:text-[22px] lg:leading-[33.86px]">In Stock</p>
                 </div>
                 <div className="">
-                  <p className="text-[6.22px] leading-[7.55px] md:text-[19px] md:leading-[33.86px] lg:text-[32px] lg:leading-[38.73px] font-semibold">{item.price}</p>
+                  <p className="text-[6.22px] leading-[7.55px] md:text-[19px] md:leading-[33.86px] lg:text-[32px] lg:leading-[38.73px] font-semibold">₦{item.current_price[0].NGN[0]}</p>
                 </div>
               </div>
             </div>

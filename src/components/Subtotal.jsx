@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from 'react';
 import { useSelector } from 'react-redux';
@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const Subtotal = () => {
   const subtotal = useSelector(selectSubtotal);
+  console.log("subtotal", subtotal);
 
   return (
     <div className="w-full max-w-[1450px] mx-auto px-2 py-5 pt-5 pb-5 bg-[#D9D9D9]">
