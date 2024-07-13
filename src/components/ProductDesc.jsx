@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
-import image2 from "../../public/assets/images/image3.png";
+import hero from "../../public/assets/images/hero.png";
 import cart from "../../public/assets/images/cart-white.png";
 
 const ProductDesc = () => {
   return (
-    <div className='container mx-auto pt-10 py-5 md:py-25 bg-[#D9D9D9] shadow-md'>
+    <div className='w-full max-w-[1450px] mx-auto pt-10 py-5 md:py-25 bg-[#D9D9D9] shadow-md'>
       <div className='px-3 md:px-0 lg:px-0'>
         <div className='bg-white h-auto rounded-md p-5 flex items-center'>
           <div>
             <Image 
               className='w-[73.33px] h-[76.32px] md:w-[200px] md:h-[300px] lg:w-[286.96px] lg:h-[318px] object-contain' 
-              src={image2} 
+              src={hero} 
               alt='iPhone 15 Pro Max 1TB' 
             />
           </div>

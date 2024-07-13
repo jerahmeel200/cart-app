@@ -20,7 +20,7 @@ const ProductDetails = () => {
   ];
 
   return (
-    <div className="container mx-auto bg-[#D9D9D9]">
+    <div className="w-full max-w-[1450px] mx-auto bg-[#D9D9D9]">
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4">Product details</h2>
         <ul className="list-disc pl-5 space-y-2">

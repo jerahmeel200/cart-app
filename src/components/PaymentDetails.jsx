@@ -2,6 +2,7 @@ import React from 'react';
 import eclipes from '../../public/assets/images/Eclipse.png'
 import security from '../../public/assets/images/security.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PaymentDetails = () => {
   return (
@@ -62,7 +63,10 @@ const PaymentDetails = () => {
         </div>
         <div className="flex justify-between items-center">
 <Image src={eclipes} alt="Card Icons" className="h-8 object-contain" />
-<button className="bg-[#145771] text-white max-w-[560.99px] max-h-[114.96px] px-4 py-2 rounded-sm font-interFont">CONFIRM PAYMENT METHOD</button>
+<Link href="/confirm">
+
+<button type='submit' className="bg-[#145771] text-white  max-w-[560.99px] max-h-[114.96px] px-4 py-2 rounded-sm font-interFont">CONFIRM PAYMENT METHOD</button>
+</Link>
 </div> 
        
       </div>

@@ -54,20 +54,21 @@ const Cart = () => {
                 </button>
               </div>
               <div className="flex items-center">
-                <button
-                  onClick={() => dispatch(incrementQuantity(item.id))}
-                  className="bg-[#145771] text-white font-bold px-2 py-1 border rounded text flex justify-center items-center w-[20.07px] h-[20.06px] md:w-[50px] md:h-[20px] lg:w-[65.42px] lg:h-[61px]"
-                >
-                  +
-                </button>
-                <span className="mx-2 font-bold text-[7.22px] leading-[8.55px] md:text-[19px] md:leading-[33.86px] lg:text-[16.88px] lg:leading-[38.73px]">
-                  {item.quantity}
-                </span>
+              
                 <button
                   onClick={() => dispatch(decrementQuantity(item.id))}
                   className="bg-[#145771] text-white font-bold px-2 py-1 border rounded text flex justify-center items-center w-[20.07px] h-[20.06px] md:w-[50px] md:h-[20px] lg:w-[65.42px] lg:h-[61px]"
                 >
                   -
+                </button>
+                <span className="mx-2 font-bold text-[7.22px] leading-[8.55px] md:text-[19px] md:leading-[33.86px] lg:text-[16.88px] lg:leading-[38.73px]">
+                  {item.quantity}
+                </span>
+                <button
+                  onClick={() => dispatch(incrementQuantity(item.id))}
+                  className="bg-[#145771] text-white font-bold px-2 py-1 border rounded text flex justify-center items-center w-[20.07px] h-[20.06px] md:w-[50px] md:h-[20px] lg:w-[65.42px] lg:h-[61px]"
+                >
+                  +
                 </button>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Specifications = () => {
   return (
-    <div className="container mx-auto pt-5 py-5  md:py-25 bg-[#D9D9D9]">
+    <div className="w-full max-w-[1450px] mx-auto pt-5 py-5  md:py-25 bg-[#D9D9D9]">
       <div className="bg-white p-6 rounded-lg shadow-md">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gray-100 p-4 rounded-md">
