@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -5,8 +6,10 @@ import logo from '../../../../public/assets/images/logo.png';
 import user from '../../../../public/assets/images/user.png';
 import cart from '../../../../public/assets/images/cart.png';
 import { FaSearch } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+  const item = useSelector((state)=>state.cart)
   return (
     <header>
       <div className="  rounded-t-lg w-full max-w-[1450px] mx-auto px-2 py-5 md:py-25 bg-[#D9D9D9]">
@@ -38,7 +41,7 @@ const Navbar = () => {
               <Link href="/cart">
                 <div className="relative">
                   <Image src={cart} alt='cart' className='w-[20px] h-[20px] md:w-[30px] md:h-[30px] object-contain' />
-                  <div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-[#145771] text-white text-xs flex items-center justify-center">2</div>
+                  <div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-[#145771] text-white text-xs flex items-center justify-center">{item.length}</div>
                 </div>
               </Link>
               <Image src={user} alt='user' className='w-[20px] h-[20px] md:w-[30px] md:h-[30px] object-contain' />
