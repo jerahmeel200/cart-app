@@ -16,8 +16,11 @@ const Navbar = () => {
         <section className="flex min-h-20 w-full flex-col px-5 py-2">
           <div className="relative flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center justify-between w-full md:w-auto">
+
               <div className='w-[206px] h-[31px] md:w-[300px] md:h-[40px] lg:w-[390px] lg:h-[65px]'>
+                <Link href="/">
                 <Image src={logo} alt='logo' className='' />
+                </Link>
               </div>
               <div className="flex items-center gap-2 md:gap-5 md:hidden">
                 <Link href="/cart">
