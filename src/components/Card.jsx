@@ -41,7 +41,7 @@ const Card = () => {
             {paginatedProducts?.map((product) => (
               <div
                 key={product.id}
-                className="cursor-pointer bg-white p-4 py-1 rounded-lg shadow-md mx-auto flex flex-col justify-between w-full max-w-[430px] h-full max-h-[490px]"
+                className="cursor-pointer bg-white p-4 py-5 rounded-lg shadow-md mx-auto flex flex-col justify-between w-full max-w-[430px] h-full max-h-[511px]"
               >
                 <Link href={`/product/${product.id}`} passHref>
                   <img
