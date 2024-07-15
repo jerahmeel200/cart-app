@@ -1,13 +1,11 @@
 "use client";
-
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { selectSubtotal } from '@/redux/Cartslice';
+import { useCart } from '@/context/CartContext';
 import Link from 'next/link';
 
 const Subtotal = () => {
-  const subtotal = useSelector(selectSubtotal);
-  console.log("subtotal", subtotal);
+  const { selectSubtotal } = useCart();
+  const subtotal = selectSubtotal();  // Call the function to get the subtotal value
 
   return (
     <div className="w-full max-w-[1450px] mx-auto px-2 py-5 pt-5 pb-5 bg-[#D9D9D9]">
@@ -21,13 +19,13 @@ const Subtotal = () => {
             Subtotal
           </p>
           <p className="text-[13.62px] leading-[16.48px] md:text-[25px] md:leading-[33.86px] lg:text-[32px] lg:leading-[38.86px] font-semibold">
-            ₦{subtotal.toLocaleString()}
+            ₦{isNaN(subtotal) ? 0 : subtotal.toFixed(2)}
           </p>
         </div>
         <hr className="-mx-6" />
         <Link href='/payment'>
           <button className="w-full mt-4 px-6 py-3 bg-[#145771] text-white font-bold rounded">
-            CHECKOUT (₦{subtotal.toLocaleString()})
+            CHECKOUT (₦{isNaN(subtotal) ? 0 : subtotal.toFixed(2)})
           </button>
         </Link>
       </div>

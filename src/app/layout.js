@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Provder from "@/redux/Provider";
+// import Provder from "@/redux/Provider";
+import { CartProvider } from "@/context/CartContext";
+import ProductsDataContextProvider from "@/context/ProductsDataContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,10 +15,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Provder>
+ 
 
-        {children}
-        </Provder>
+      <ProductsDataContextProvider>
+          <CartProvider>
+        
+         
+              {children}
+             
+            
+          </CartProvider>
+        </ProductsDataContextProvider>
+        
         </body>
     </html>
   );

@@ -1,7 +1,10 @@
+"use client"
 import Card from '@/components/Card'
+
 import Hero from '@/components/Hero'
 import Footer from '@/components/layout/footer'
 import Navbar from '@/components/layout/navbar'
+// import { useProductsData } from '@/context/ProductsDataContext'
 import React from 'react'
 
 const HomeLanding = () => {
@@ -9,7 +12,7 @@ const HomeLanding = () => {
     <div className='p-2'>
         <Navbar/>
         <Hero/>
-        <Card/>
+        <Card />
         <Footer/>
         </div>
   )
