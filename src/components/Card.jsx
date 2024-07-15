@@ -16,7 +16,7 @@ const Card = () => {
 
   const { items, isLoading, error } = useProductsData();
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
   const totalPages = Math.ceil(items?.length / itemsPerPage);
 
   const handlePageChange = (page) => {

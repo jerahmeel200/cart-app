@@ -13,8 +13,8 @@ export const ProductsDataProvider = ({ children }) => {
         queryFn: async () => {
             const params = {
                 organization_id:"73a93f8dfa8c4446ad60a72206a9c5e8",
-                page: 1,
-                size: 30,
+                
+                 
                 Appid: "TBQU4BA070V7C3X",
                 Apikey:"b4a146d23aab4474b0f439f0c666625b20240713045829437701",
             };
